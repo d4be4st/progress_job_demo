@@ -1,12 +1,8 @@
 class ExportJob < ProgressJob::Base
-  def initialize(progress_max)
-    super progress_max: progress_max
-  end
-
   def perform
     require 'csv'
     update_stage('Exporting users')
-    users = User.first(1000)
+    users = User.first(10000)
     update_progress_max(users.count)
     csv_string = CSV.generate do |csv|
       users.each do |user|
