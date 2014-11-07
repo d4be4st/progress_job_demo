@@ -31,6 +31,7 @@ group :development do
   gem 'pry-rails'
 end
 
+gem 'daemons'
 gem 'delayed_job_active_record'
 gem 'progress_job'
 gem 'faker'
