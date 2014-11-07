@@ -5,17 +5,17 @@ default: &default
   encoding: utf8
   host: localhost
 
-# development:
-#   <<: *default
-#   database: progress_job_demo_dev
-#   username: root
-#   password:
+development:
+  <<: *default
+  database: progress_job_demo_dev
+  username: root
+  password:
 
-# test:
-#   <<: *default
-#   database: progress_job_demo_test
-#   username: root
-#   password:
+test:
+  <<: *default
+  database: progress_job_demo_test
+  username: root
+  password:
 
 production:
   <<: *default
