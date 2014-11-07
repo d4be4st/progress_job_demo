@@ -1,6 +1,5 @@
 :plain
   var interval;
-  $('.export .well').show();
   interval = setInterval(function(){
     $.ajax({
       url: '/progress-job/' + #{@job.id},
