@@ -20,5 +20,5 @@ test:
 production:
   <<: *default
   database: progress_job_demo
-  username: <%= ENV['MYSQL_USER'] %>
-  password: <%= ENV['MYSQL_PASSWORD'] %>
+  username: web
+  password: slaven69
