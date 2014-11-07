@@ -1,0 +1,13 @@
+.export
+  = link_to 'Export Users', export_users_path, remote: true, class: 'btn btn-primary btn-lg'
+  .well{style: 'display:none'}
+    .row
+      .col-xs-12
+        .progress-status.text-primary
+    .row
+      .col-xs-12
+        .progress.progress-striped.active
+          .progress-bar
+            .text-primary
+              0%
+  = link_to 'View csv', '/system/export.csv', class: 'btn btn-success export-link', style: 'display:none'
