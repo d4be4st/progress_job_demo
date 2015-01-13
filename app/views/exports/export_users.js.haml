@@ -17,7 +17,6 @@
         progress = job.progress_current / job.progress_max * 100;
         // In job stage
         if (progress.toString() !== 'NaN'){
-          console.log(progress);
           $('.progress-status').text(job.progress_current + '/' + job.progress_max);
           $('.progress-bar').css('width', progress + '%').text(progress + '%');
         }
