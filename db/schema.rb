@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20141107151357) do
     t.integer  "progress_max",     default: 0
   end
 
-  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority"
+  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -38,6 +38,5 @@ ActiveRecord::Schema.define(version: 20141107151357) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
 
 end

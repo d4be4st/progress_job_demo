@@ -14,7 +14,8 @@
           clearInterval(interval);
         }
 
-        progress = job.progress_current / job.progress_max * 100;
+        aprogress = job.progress_current / job.progress_max * 100;
+        progress = progress.toFixed(2);
         // In job stage
         if (progress.toString() !== 'NaN'){
           $('.progress-status').text(job.progress_current + '/' + job.progress_max);
