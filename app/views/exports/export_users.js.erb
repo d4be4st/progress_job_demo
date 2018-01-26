@@ -1,4 +1,5 @@
 var interval;
+$('.export-users').hide();
 interval = setInterval(function(){
   $.ajax({
     url: '/progress-job/' + <%= @job.id %>,
